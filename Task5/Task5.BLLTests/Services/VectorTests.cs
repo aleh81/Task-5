@@ -19,20 +19,6 @@ namespace Task5.BLLTests.Services
 			Assert.AreEqual(expected.X, result.X);
 			Assert.AreEqual(expected.Y, result.Y);
 			Assert.AreEqual(expected.Z, result.Z);
-
-			//step 2
-			try
-			{
-				var notInitializedVector = new Vector();
-				var initializedVector = new Vector(2.5, 8, 1.25);
-
-				var newVector = notInitializedVector + initializedVector;
-			}
-			catch (Exception e)
-			{
-				Assert.AreEqual("System.ArgumentException", e.GetType().ToString());
-				Assert.AreEqual("ERROR: Vector is not initialized", e.Message);
-			}
 		}
 
 		[TestMethod()]
@@ -47,20 +33,6 @@ namespace Task5.BLLTests.Services
 			Assert.AreEqual(expected.X, result.X);
 			Assert.AreEqual(expected.Y, result.Y);
 			Assert.AreEqual(expected.Z, result.Z);
-
-			//step 2
-			try
-			{
-				var notInitializedVector = new Vector();
-				var initializedVector = new Vector(2.5, 8, 1.25);
-
-				var newVector = notInitializedVector - initializedVector;
-			}
-			catch (Exception e)
-			{
-				Assert.AreEqual("System.ArgumentException", e.GetType().ToString());
-				Assert.AreEqual("ERROR: Vector is not initialized", e.Message);
-			}
 		}
 
 		[TestMethod()]
@@ -75,20 +47,6 @@ namespace Task5.BLLTests.Services
 			Assert.AreEqual(expected.X, result.X);
 			Assert.AreEqual(expected.Y, result.Y);
 			Assert.AreEqual(expected.Z, result.Z);
-
-			//step 2
-			try
-			{
-				var notInitializedVector = new Vector();
-				var initializedVector = new Vector(2.5, 8, 1.25);
-
-				var newVector = notInitializedVector * initializedVector;
-			}
-			catch (Exception e)
-			{
-				Assert.AreEqual("System.ArgumentException", e.GetType().ToString());
-				Assert.AreEqual("ERROR: Vector is not initialized", e.Message);
-			}
 		}
 
 		[TestMethod()]
@@ -103,20 +61,6 @@ namespace Task5.BLLTests.Services
 			Assert.AreEqual(expected.X, result.X);
 			Assert.AreEqual(expected.Y, result.Y);
 			Assert.AreEqual(expected.Z, result.Z);
-
-			//step 2
-			try
-			{
-				var notInitializedVector = new Vector();
-				var initializedVector = new Vector(2.5, 8, 1.25);
-
-				var newVector = notInitializedVector / initializedVector;
-			}
-			catch (Exception e)
-			{
-				Assert.AreEqual("System.ArgumentException", e.GetType().ToString());
-				Assert.AreEqual("ERROR: Vector is not initialized", e.Message);
-			}
 		}
 
 		[TestMethod()]
@@ -131,20 +75,6 @@ namespace Task5.BLLTests.Services
 			Assert.AreEqual(expected.X, result.X);
 			Assert.AreEqual(expected.Y, result.Y);
 			Assert.AreEqual(expected.Z, result.Z);
-
-			//step 2
-			try
-			{
-				var notInitializedVector = new Vector();
-				var initializedVector = new Vector(2.5, 8, 1.25);
-
-				var newVector = notInitializedVector * 9;
-			}
-			catch (Exception e)
-			{
-				Assert.AreEqual("System.ArgumentException", e.GetType().ToString());
-				Assert.AreEqual("ERROR: Vector is not initialized", e.Message);
-			}
 		}
 	}
 }
