@@ -43,7 +43,7 @@ namespace Task5.BLL.Services
 		}
 
 		private bool IsInitialized =>
-			(X.HasValue) && (Y.HasValue) && (Z.HasValue);
+			X.HasValue && Y.HasValue && Z.HasValue;
 
 		/// <summary>
 		/// Summation of two vectors
