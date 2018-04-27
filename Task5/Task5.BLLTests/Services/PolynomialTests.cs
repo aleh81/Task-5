@@ -8,14 +8,6 @@ namespace Task5.BLLTests.Services
 	public class PolynomialTests
 	{
 		[TestMethod()]
-		public void SolutionTest()
-		{
-			var polynom = new Polynomial(new double[]{1, 2});
-			var result = polynom.Solution(10);
-			Assert.AreEqual(21, result );
-		}
-
-		[TestMethod()]
 		public void Sum_obj_and_obj()
 		{
 			var polynomA = new Polynomial(new double[]{3, 4 });

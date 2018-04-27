@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Task5.BLL.Services
 {
@@ -14,9 +11,6 @@ namespace Task5.BLL.Services
 		{
 			Elements = elements;
 		}
-
-		public double Solution(double argument) =>
-			Elements.Select((t, i) => t * Math.Pow(argument, i)).Sum();
 
 		private static double[] Sum(double[] argA, double[] argB) =>
 			Operate(argA, argB, (a, b) => a + b);
