@@ -11,6 +11,13 @@ namespace Task5.UI
 	{
 		static void Main(string[] args)
 		{
+			var polynomA = new Polynomial(new double[] { 3, 4 });
+			var polynomB = new Polynomial(new double[] { 3, 3 });
+			var result = polynomA + polynomB;
+
+			Console.WriteLine(result);
+
+			Console.ReadKey();
 		}
 	}
 }

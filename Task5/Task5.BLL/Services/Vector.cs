@@ -77,7 +77,7 @@ namespace Task5.BLL.Services
 		/// <param name="vector"></param>
 		/// <param name="scalar"></param>
 		/// <returns>New object or exception</returns>
-		public static Vector operator * (Vector vector, int scalar) =>
+		public static Vector operator *  (Vector vector, int scalar) =>
 				new Vector(vector.X * scalar, vector.Y * scalar, vector.Z * scalar);
 
 		/// <summary>
